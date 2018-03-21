@@ -9,18 +9,28 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <title></title>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Live API JS file -->
+  <script src="LiveAPI.js"></script>
+
+
+  <!-- !! Populate the Title w/ Store Name -->
+  <title>Multi-Location Demo</title>
 </head>
 
 <body>
-
-  <!-- Page Heading -->
-  <div class="jumbotron"><h1 class="text-center"><a id="locationName"></a></h1></div>
   
   <!-- Nav Bar -->
+  <!-- !! Populate Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#"></a>
+      <a class="navbar-brand" href="#">Company Name</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,6 +38,7 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="#">Home</a>
           <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link active" href="#">Locations <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#">Blog</a>
           <a class="nav-item nav-link" href="#">Contact</a>
         </div>
@@ -37,55 +48,15 @@
 
 
   <div class="container text-center">
-    <!-- Featured Message Section -->
+    <!-- !! Populate Featured Message Section -->
     <hr class="divider">
-    <h2 id="featuredMessage" class="text-center text-lg text-uppercase"></h2>
+    <h2 id="featuredMessage" class="text-center text-lg text-uppercase">Locations</h2>
     <hr class="divider">
 
-    <div class="row">
-      <!-- Phone Number -->
-      <div class = "col">
-        <h3>Phone Number</h3>
-        <span><a id="phone"></a></span>
-      </div>
-      <!--  Website Link-->
-      <div class="col">
-        <h3><a id="websiteUrl">Check out our Homepage!</a><span></span></h3> 
-      </div>
-    </div>
-
-
-    <div class = "row">
-      <!-- Address -->
-      <div class="col">
-        <h3>Address</h3>                     
-        <div><span id="address"></span></div>
-        <div><span id="address2"></span></div>
-        <div><span id="city"></span> <span id="state"></span> <span id="zip"></span></div>
-        <div><a style="color: black"></a></div>
-      </div>
-
-      <!-- Business Description -->
-      <div class="col">
-        <h3>Description</h3>
-        <div><span id="description"></span></div>  
-      </div>
-      <br>
-    </div>
+    <div id="placeholder"></div>
   </div>
 
 
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <!-- jQuery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Live API JS file -->
-  <script src="LiveAPI.js"></script>
 
   </body>
 </html>
